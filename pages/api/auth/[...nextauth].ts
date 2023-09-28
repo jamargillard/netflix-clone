@@ -11,15 +11,15 @@ import { PrismaAdapter } from '@next-auth/prisma-adapter';
 export default NextAuth({
 providers:[
     GithubProvider({
-        clientId: process.env.GITHUB_ID || '',
-        clientSecret: process.env.GITHUB_SECRET || '',
+        clientId: process.env.GITHUB_ID || '2869ab7cf933f84443b4',
+        clientSecret: process.env.GITHUB_SECRET || 'af1f8d4d9a88a241b0d6ad2f6b9ee75221198d98',
     }),
     GoogleProvider({
-        clientId: process.env.GOOGLE_CLIENT_ID || '',
-        clientSecret: process.env.GOOGLE_SECRET || '',
+        clientId: process.env.GOOGLE_CLIENT_ID || '887711256317-g960ik9agl57lvoipuhiablm9q6pe671.apps.googleusercontent.com',
+        clientSecret: process.env.GOOGLE_SECRET || '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',
     }),
         Credentials({    
-            id:'credentials',
+            id:'Credentials',
             name:'Credentials',
             credentials: {
                 email: {
@@ -70,3 +70,4 @@ signIn:'/auth',
     },
     secret: process.env.NEXTAUTH_SECRET
 })
+
