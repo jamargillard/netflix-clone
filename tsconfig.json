@@ -14,7 +14,8 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@../lib/Fetcher": ["../lib/Fetcher"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
