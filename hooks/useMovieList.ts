@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import Fetcher from "@/lib/Fetcher";
+import Fetcher from "../lib/Fetcher";
 
 const useMovieList = () => {
     const { data, error, isLoading } = useSWR('/api/movies', Fetcher,{
