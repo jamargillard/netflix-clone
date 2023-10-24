@@ -1,5 +1,5 @@
 import useSWR from 'swr'
-import Fetcher from '../lib/Fetcher'
+import Fetcher from '@/lib/Fetcher'
 
 const useFavorites = () => {
     const {data, error, isLoading, mutate} = useSWR('/api/favorites', Fetcher,{

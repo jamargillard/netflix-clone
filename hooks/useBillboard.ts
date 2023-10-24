@@ -1,5 +1,5 @@
 import useSwr from 'swr'
-import Fetcher from '../lib/Fetcher';
+import Fetcher from '@/lib/Fetcher';
 
 const useBillboard = () => {
   const { data, error, isLoading } = useSwr('/api/random', Fetcher, { 
@@ -17,3 +17,4 @@ const useBillboard = () => {
 export default useBillboard  ;
 
 //change
+
