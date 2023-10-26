@@ -15,7 +15,7 @@
     "incremental": true,
     "paths": {
       "@/*": ["./*"],
-      "@/lib/Fetcher": ["./lib/Fetcher/*"]
+      "@/lib/fetcher": ["./lib/fetcher/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

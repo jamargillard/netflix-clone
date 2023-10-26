@@ -1,9 +1,9 @@
 import useSWR from 'swr';
 
-import Fetcher from '../lib/Fetcher';
+import fetcher from '../lib/fetcher';
 
  const useCurrentUser =()=> {
-    const { data,  error,  isLoading, mutate} = useSWR('/api/current', Fetcher);
+    const { data,  error,  isLoading, mutate} = useSWR('/api/current', fetcher);
 
 
   return{
