@@ -121,6 +121,7 @@ const Auth = () => {
               </span>
               .
             </p>
+            <p className="text-neutral-500 mt-12"> clone by Jamar Gillard </p>
           </div>
         </div>
       </div>
